@@ -1,20 +1,52 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
+  const linkStyle = {
+    textDecoration: "none",
+    fontWeight: "bold",
+    padding: "0.5rem 1rem",
+    borderRadius: "6px",
+  };
+
   return (
     <nav style={{ display: "flex", gap: "1rem", padding: "1rem" }}>
-      <Link to="/" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      <NavLink
+        to="/"
+        style={({ isActive }) => ({
+          ...linkStyle,
+          color: isActive ? "white" : "black",
+          backgroundColor: isActive ? "#f4ce14" : "transparent",
+        })}
+      >
         Home
-      </Link>
-      <Link to="/reserve" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      </NavLink>
+
+      <NavLink
+        to="/reserve"
+        style={({ isActive }) => ({
+          ...linkStyle,
+          color: isActive ? "white" : "black",
+          backgroundColor: isActive ? "#f4ce14" : "transparent",
+        })}
+      >
         Reserve
-      </Link>
-      <Link to="/confirmation" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      </NavLink>
+
+      <NavLink
+        to="/confirmation"
+        style={({ isActive }) => ({
+          ...linkStyle,
+          color: isActive ? "white" : "black",
+          backgroundColor: isActive ? "#f4ce14" : "transparent",
+        })}
+      >
         Confirmation
-      </Link>
+      </NavLink>
     </nav>
   );
 }
 
 export default Nav;
+
+
