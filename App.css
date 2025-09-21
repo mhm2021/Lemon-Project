@@ -1,0 +1,24 @@
+/* Reset & global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Make sure sections have spacing */
+.App > * {
+  margin-bottom: 2rem;
+}
+
+/* Links reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
