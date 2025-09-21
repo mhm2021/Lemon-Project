@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+<link rel="stylesheet" href="Nav.css">
 
 function Nav() {
   const linkStyle = {
@@ -48,5 +49,6 @@ function Nav() {
 }
 
 export default Nav;
+
 
 
