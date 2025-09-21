@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./Main.css";
 
 function Main() {
   const navigate = useNavigate();
@@ -30,3 +31,4 @@ function Main() {
 }
 
 export default Main;
+
