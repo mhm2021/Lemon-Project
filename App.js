@@ -5,6 +5,12 @@ import Footer from "./Footer";
 import Main from "./Main";
 import ReservationForm from "./ReservationForm";
 import Confirmation from "./Confirmation";
+import Nav from "./Nav";
+import Specials from "./Specials";
+import "./App.css";
+
+
+
 
 function App() {
   return (
